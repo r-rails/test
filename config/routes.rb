@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
   root "home#index"
+  
+  get "/grace", to: "home#grace"
 end
