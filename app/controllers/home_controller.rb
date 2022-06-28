@@ -4,4 +4,7 @@ class HomeController < ApplicationController
 
   def grace
   end
+
+  def david_csete
+  end
 end
