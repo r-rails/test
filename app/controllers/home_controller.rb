@@ -4,4 +4,7 @@ class HomeController < ApplicationController
 
   def grace
   end
+
+  def uzorjchibuzor
+  end
 end
