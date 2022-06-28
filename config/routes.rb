@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   
   get "/grace", to: "home#grace"
   get "/uzorjchibuzor", to: "home#uzorjchibuzor"
+  get "/links", to: "home#links"
 end

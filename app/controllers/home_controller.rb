@@ -7,4 +7,8 @@ class HomeController < ApplicationController
 
   def uzorjchibuzor
   end
+
+# Links page
+  def links
+  end
 end
