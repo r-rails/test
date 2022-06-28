@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'hamza/print'
   root "home#index"
   get "/links", to: "home#links"
   
