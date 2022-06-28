@@ -16,4 +16,8 @@ class HomeController < ApplicationController
   end
   def david_csete
   end
+
+  def agustin_palma_m
+    
+  end
 end
