@@ -11,4 +11,6 @@ class HomeController < ApplicationController
 # Links page
   def links
   end
+  def david_csete
+  end
 end
