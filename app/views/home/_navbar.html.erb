@@ -1,6 +1,4 @@
-<nav
-  class="flex flex-col md:flex-row px-6 py-4 border-b shadow-sm max-w-screen-2xl mx-auto"
->
+<nav class="flex flex-col md:flex-row px-6 py-4 border-b shadow-sm max-w-screen-2xl mx-auto">
   <!-- Logo -->
   <div>
     <h2 class="mx-5 text-3xl font-bold">
@@ -14,10 +12,7 @@
         <%= link_to 'Links', links_path, class: "font-semibold block cursor-pointer p-2 hover:text-blue-500" %>
       </li>
       <li>
-        <a
-          class="font-semibold block cursor-pointer p-2 hover:text-blue-500"
-          >Members</a
-        >
+        <%= link_to 'Members', members_path, class: "font-semibold block cursor-pointer p-2 hover:text-blue-500" %>
       </li>
     </ul>
   </div>
