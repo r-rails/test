@@ -1,4 +1,3 @@
-require "rails_helper"
 
 RSpec.describe Link, :type => :model do
   describe "useful links that helps with rails development" do
