@@ -27,6 +27,7 @@ class LinksController < ApplicationController
       if @link.save
         format.html { redirect_to link_url(@link), notice: "Link was successfully created." }
         format.json { render :show, status: :created, location: @link }
+        format.turbo_stream
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @link.errors, status: :unprocessable_entity }
