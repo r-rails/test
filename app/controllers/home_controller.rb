@@ -11,6 +11,13 @@ class HomeController < ApplicationController
   def uzorjchibuzor
   end
 
+  def hamza
+  end
+
+# Links page
+  def links
+  end
+
   def david_csete
   end
 
