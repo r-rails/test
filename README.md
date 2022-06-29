@@ -1,4 +1,6 @@
-# Welcome to our test repository!!!
+# Welcome to our test repository!
+
+Make sure you have Postgresql installed on your machine.
 
 ## First Steps
 1. clone this repo with `git clone https://github.com/r-rails/test.git` to your computer
