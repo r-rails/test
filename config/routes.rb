@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  resources :links
   root "home#index"
-  get "/links", to: "home#links"
   
   scope "members", as: 'members' do
     get "/", to: "home#members"
