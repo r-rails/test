@@ -3,7 +3,7 @@ class LinksController < ApplicationController
 
   # GET /links or /links.json
   def index
-    @links = Link.all
+    @links = Link.all.reverse
   end
 
   # GET /links/1 or /links/1.json

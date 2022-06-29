@@ -1,22 +1,23 @@
-<div id="<%= dom_id link %>">
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Name:</strong>
+<div id="<%= dom_id link %>" class="mt-4">
+  <h2 class="font-medium leading-tight text-3xl mt-0 mb-2">
     <%= link.name %>
-  </p>
+  </h2>
+  <%= link_to link.url, link.url, class: "text-blue-600 hover:text-blue-700 transition duration-300 ease-in-out mb-4" %>
+
 
   <p class="my-5">
-    <strong class="block font-medium mb-1">Url:</strong>
-    <%= link.url %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Description:</strong>
+    <strong class="font-medium mb-1">Description:</strong>
     <%= link.description %>
   </p>
 
   <% if action_name != "show" %>
     <%= link_to "Show this link", link, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to 'Edit this link', edit_link_path(link), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
-    <hr class="mt-6">
+  <% else %>
+    <%= link_to "Back to links", links_path, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
   <% end %>
+  <div class="inline-block ml-2">
+    <%= button_to 'Destroy this link', link_path(link), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+  </div>
+  <%= link_to 'Edit this link', edit_link_path(link), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+  <hr class="mt-6">
 </div>
