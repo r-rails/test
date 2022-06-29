@@ -7,5 +7,6 @@ Rails.application.routes.draw do
     get "/grace", to: "home#grace"
     get "/uzorjchibuzor", to: "home#uzorjchibuzor"
     get "/david_csete", to: "home#david_csete"
+    get "/hamza", to: "home#hamza"
   end
 end
