@@ -11,13 +11,13 @@
   </p>
 
   <% if action_name != "show" %>
-    <%= link_to "Show this link", link, data: {turbo_frame: "_top"}, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Show this link", link, data: {turbo_frame: "_top"}, class: "btn-basic" %>
   <% else %>
-    <%= link_to "Back to links", links_path, data: {turbo_frame: "_top"}, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Back to links", links_path, data: {turbo_frame: "_top"}, class: "btn-basic" %>
   <% end %>
   <div class="inline-block ml-2">
-    <%= button_to 'Destroy this link', link_path(link), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+    <%= button_to 'Destroy this link', link_path(link), method: :delete, class: "btn-basic" %>
   </div>
-  <%= link_to 'Edit this link', edit_link_path(link), data: {turbo_frame: "_top"}, class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+  <%= link_to 'Edit this link', edit_link_path(link), data: {turbo_frame: "_top"}, class: "btn-basic" %>
   <hr class="mt-6">
 </div>
