@@ -10,5 +10,3 @@ Make sure you have Postgresql installed on your machine.
 5. run `yarn install` to install couple more dependencies
 6. run `rails db:{drop,setup}` to setup the database and prefill it with a few links
 7. run `bin/dev`, instead of `rails s`, since it includes tailwind reloading
-
-test
