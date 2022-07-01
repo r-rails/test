@@ -1,2 +1,13 @@
-- name: Dokku Deploy action
-  uses: idoberko2/dokku-deploy-github-action@v1
+on:
+  pull_request:
+    branches: [main]
+    types:
+      - closed
+
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo The PR was merged
