@@ -8,6 +8,15 @@ jobs:
   if_merged:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
+
     steps:
-    - run: |
-        echo The PR was merged
+      - uses: actions/checkout@v2
+        with:
+            fetch-depth: 0
+      - id: deploy
+        name: Deploy to dokku
+        uses: idoberko2/dokku-deploy-github-action@v1
+        with:
+            ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+            dokku-host: '23.88.117.56'
+            app-name: 'testapp'
