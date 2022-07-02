@@ -11,4 +11,4 @@ jobs:
     - name: Set up Ruby 3.0.4
       uses: ruby/setup-ruby@v1
     - name: Run RuboCop
-      run: bundle exec rubocop --parallel
+      run: rubocop --parallel
