@@ -10,3 +10,55 @@
     @apply bg-gray-200;
   }
 }
+
+#pipen95 .contact-header {
+  justify-content: space-between;
+}
+
+#pipen95 .name {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: space-between;
+}
+
+#pipen95 .contact {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#pipen95 .contact li:not(last-child) {
+  margin-right: 0.5rem;
+}
+
+#pipen95 .profile-img {
+  box-shadow: 2px 4px 5px rgb(0 0 0 / 30%), 10px 20px 20px rgb(0 0 0 / 20%);
+  margin-right: 5rem;
+  margin-top: 1rem;
+  width: 309px;
+  height: 309px;
+}
+
+#pipen95 h1 {
+  color: rgb(89, 131, 146);
+}
+
+#pipen95 .text p:not(last-child) {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 68.75em) {
+  #pipen95 .profile-img {
+    margin: 0 auto 2rem auto;
+  }
+  #pipen95 .name {
+    margin: 0 3rem;
+    text-align: center;
+    text-align: left;
+  }
+
+  #pipen95 .text {
+    margin-left: 9px;
+  }
+}
