@@ -13,6 +13,9 @@ class HomeController < ApplicationController
 
   def hamza
   end
+  
+  def pipen95
+  end
 
 # Links page
   def links
@@ -20,6 +23,8 @@ class HomeController < ApplicationController
 
   def david_csete
   end
+
+ 
 
   def agustin_palma_m
   end
