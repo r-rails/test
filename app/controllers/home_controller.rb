@@ -1,31 +1,22 @@
+# frozen_string_literal: true
+
 class HomeController < ApplicationController
-  def index
-  end
+  def index; end
 
-  def members
-  end
-
-  def grace
-  end
-
-  def uzorjchibuzor
-  end
-
-  def hamza
-  end
+  # Links page
+  def links; end
   
-  def pipen95
-  end
+  def members; end
 
-# Links page
-  def links
-  end
+  def grace; end
 
-  def david_csete
-  end
+  def uzorjchibuzor; end
 
- 
+  def hamza; end
+  
+  def pipen95; end
 
-  def agustin_palma_m
-  end
+  def david_csete; end
+
+  def agustin_palma_m; end
 end
